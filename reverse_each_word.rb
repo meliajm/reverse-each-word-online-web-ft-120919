@@ -1,9 +1,10 @@
 require 'pry'
 def reverse_each_word(sentence)
   # binding.pry
+  array = []
   a = sentence.split(" ")
   a.collect do |word|
-    word.reverse
+    array.push(word.reverse)
   end
   a
   # binding.pry
